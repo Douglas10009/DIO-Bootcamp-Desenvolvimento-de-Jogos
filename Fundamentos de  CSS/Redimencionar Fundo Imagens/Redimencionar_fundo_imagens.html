@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-image</title>
+
+    <style>
+        .box{
+            height: 300px;
+            width: 400px;
+            background-color: palevioletred;
+            border: 5px black solid;
+            margin: 10px;
+            background-image: url('https://pbs.twimg.com/profile_images/1423875396517367812/emVa4yT4_400x400.jpg');
+        }
+
+        .auto{
+            background-size: auto;
+        }
+
+        .cover{
+            background-size: cover;
+        }
+
+        .contain{
+            background-size: contain;
+        }
+
+        .valor{
+            background-size: 50%;
+        }
+
+        .x-y{
+            background-size: 200px 100px;
+        }
+
+        .camadas{
+            height: 300px;
+            width: 400px;
+            background-color: palevioletred;
+            border: 5px black solid;
+            margin: 10px;
+            background-image: url('auaufollow.png'), url("https://media.macphun.com/img/uploads/macphun/blog/2063/_1.jpeg?q=75&w=1710&h=906&resize=cover");
+            background-size: 100% 100%, cover;
+        }
+    </style>
+</head>
+
+<body>
+    <p><code>background-size: auto</code></p>
+    <div class="box auto"></div>
+
+    <br>
+
+    <p><code>background-size: cover</code></p>
+    <div class="box cover"></div>
+
+    <br>
+
+    <p><code>background-size: contain</code></p>
+    <div class="box contain"></div>
+
+    <br>
+
+    <p><code>background-size: valor</code></p>
+    <div class="box valor"></div>
+
+    <br>
+
+    <p><code>background-size: x-y</code></p>
+    <div class="box x-y"></div>
+
+    <br>
+
+    <p><code>background-size: camadas</code></p>
+    <p>Auau follow tá impossível esses dias</p>
+    <div class="box camadas"></div>
+</body>
+
+</html>

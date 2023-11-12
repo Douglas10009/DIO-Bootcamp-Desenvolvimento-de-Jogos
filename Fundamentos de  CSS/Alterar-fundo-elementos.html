@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando o fundo de elementos</title>
+
+    <style>
+        .box{
+            height: 300px;
+            width: 400px;
+            background-color: palevioletred;
+            border: 5px black solid;
+            margin: 10px;
+        }
+
+        .image{
+            background-image: url('https://pbs.twimg.com/profile_images/1423875396517367812/emVa4yT4_400x400.jpg');
+        }
+
+        .gradiente {
+            background-image: linear-gradient(blue,violet, orange);
+        }
+
+        .radial{
+            background-image: radial-gradient(blue, green);
+        }
+
+        .repeat{
+            background-image: repeating-linear-gradient(to top, darkblue 0 20px, lightgreen  20px 40px);
+        }
+
+        .images{
+            background-image: url("https://pbs.twimg.com/profile_images/1423875396517367812/emVa4yT4_400x400.jpg"),
+            url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTQiYFV15XD_tyeXfEYHVFJOJ1QGtXjo181c_yNcqR8cJrQ2dRagCyzP1igjLHmjAEV_Q&usqp=CAU");
+        }
+    </style>
+</head>
+
+<body>
+    <h2><a href="https://projects.verou.me/css3patterns/">Site com patterns prontos</a></h2>
+    
+    <br>
+    
+    <p><code>background-color: url()</code></p>
+    <div class="box image"></div>
+
+    <br>
+    
+    <p>linear-gradient</p>
+    <div class="box gradiente"></div>
+
+    <br>
+    
+    <p>radial-gradient</p>
+    <div class="box radial"></div>
+
+    <br>
+    
+    <p>repeat-gradient</p>
+    <p><code>background-image: repeating-linear-gradient([comecar de], [cor inicio] [inicio] [], lightgreen  20px 40px);</code></p>
+    <p><code>background-image: repeating-linear-gradient(to top, darkblue 0 20px, lightgreen  20px 40px);</code></p>
+    <div class="box repeat"></div>
+        
+    <br>
+    
+    <p><code>background-color: url()</code></p>
+    <div class="box images"></div>
+</body>
+
+</html>

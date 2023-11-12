@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit</title>
+
+    <style>
+        div{
+            border: 5px pink solid;
+            height: 300px;
+            width: 200px;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        #contain{
+            object-fit: contain;
+        }
+
+        #cover{
+            object-fit: cover;
+        }
+
+        #none{
+            object-fit: none;
+        }
+
+        #scale-down{
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Object Fit</h1>
+    <p>Object-fit define se o objeto deve se alterar para caber no conteiner</p>
+
+    <br>
+
+    <p><code>Object-fit: fill;</code> (Default)</p>
+    <p>Preenche todo o conteiner</p>
+    <div>
+        <img src="https://cdn10.bigcommerce.com/s-yhxhf/products/10296/images/26164/STMTH008__08760.1455051422.1080.1080.jpg?c=2" 
+        id="fill">
+    </div>
+
+    <br>
+
+    <p><code>Object-fit: contain;</code></p>
+    <p>Cabe de acordo com o tamanho da imagem</p>
+    <div>
+        <img src="https://cdn10.bigcommerce.com/s-yhxhf/products/10296/images/26164/STMTH008__08760.1455051422.1080.1080.jpg?c=2" 
+        id="contain">
+    </div>
+
+    <br>
+
+    <p><code>Object-fit: cover;</code></p>
+    <p>A imagem vai preencher o conteiner, mas diferente do fill, ele não vai distorcer pois irá cortar as laterais</p>
+    <div>
+        <img src="https://cdn10.bigcommerce.com/s-yhxhf/products/10296/images/26164/STMTH008__08760.1455051422.1080.1080.jpg?c=2" 
+        id="cover">
+    </div>
+
+    <br>
+
+    <p><code>Object-fit: none;</code></p>
+    <p>Não aplica object-fit e deixa a imagem no tamanho normal</p>
+    <div>
+        <img src="https://cdn10.bigcommerce.com/s-yhxhf/products/10296/images/26164/STMTH008__08760.1455051422.1080.1080.jpg?c=2" 
+        id="none">
+    </div>
+
+    <br>
+
+    <p><code>Object-fit: scale-down;</code></p>
+    <p>Escolhe entre o contein, none ou fill para escolher a menor imagem</p>
+    <div>
+        <img src="https://cdn10.bigcommerce.com/s-yhxhf/products/10296/images/26164/STMTH008__08760.1455051422.1080.1080.jpg?c=2" 
+        id="scale-down">
+    </div>
+
+    <br>
+
+    <h1>Object Position</h1>
+    <p>Define como uma média deve ser posicionado, horizontalmente/verticalmente</p>
+    <p><code>object-position: [x] [y]</code></p>
+</body>
+
+</html>

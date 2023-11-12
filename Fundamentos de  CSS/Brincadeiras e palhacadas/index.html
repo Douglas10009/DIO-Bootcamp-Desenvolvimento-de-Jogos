@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auau Follow Secret</title>
+
+    <style>
+        div{
+            width: 500px;
+            height: 500px;
+            border: 4px black solid;
+
+            background-image: url("https://media.macphun.com/img/uploads/macphun/blog/2063/_1.jpeg?q=75&w=1710&h=906&resize=cover"), url('../Redimencionar Fundo Imagens/auaufollow.png');
+            background-repeat: no-repeat;
+            background-size: cover, 100%;
+
+            transition: 0.5s;
+        }
+
+        div:hover{
+            background-position: -110%;
+            transition: 0.5s;
+        }
+
+        @keyframes move {
+            from{
+                background-position: 0%;
+            }
+            to{
+                background-position: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Wheres the auaufollow?? 😢</h1>
+    <div style="animation: move 5s infinite alternate;"></div>
+    <br>
+    <button>dont clik here</button>
+
+    <script>
+        var button = document.querySelector("button");
+        var div = document.querySelector('div');
+
+        button.addEventListener('click', () => {div.style = ''})
+
+    </script>
+</body>
+
+</html>
