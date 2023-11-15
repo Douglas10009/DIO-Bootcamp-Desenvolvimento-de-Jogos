@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background: pink;
+        }
+
+        .exe {
+            border-width: 10px 20px;
+            border-style: groove dotted;
+            /* border-style: thin;
+            border-style: thick;
+            border-style: medium; */
+            border-color: purple red greenyellow;
+
+            /* Shorthand */
+            border-bottom: 10px solid green;
+            border-top: 5px dotted pink;
+            border-top-width: 30px;
+        }
+
+        .exe2 {
+            /* border-radius: 20px; */
+            border: 10px outset greenyellow;
+            /* border-radius: 10%; */
+        }
+
+        .exe2:hover {
+            border: 2px inset greenyellow;
+        }
+
+        .img {
+            border: 40px solid;
+            border-image-source: url("https://i.pinimg.com/originals/e9/66/84/e966845b251b834c3bead2d72ad17fac.jpg");
+        }
+
+        .img2 {
+            border: 20px solid;
+            border-image-source: linear-gradient(red, blue);
+        }
+
+        .slice {
+            border: 21px solid;
+            border-image-source: url(borda.png);
+            border-image-repeat: repeat;
+            border-image-slice: 34 fill;
+            background-origin: padding-box;
+        }
+
+        .slice-gradient {
+            border: 20px solid;
+            border-image-source: linear-gradient(#b70561,#9b4f96, #0038a8);
+            border-image-slice: 10;
+            border-image-width: 10px 15px 10px;
+        }
+
+        .repeat {
+            border: 21px solid;
+            border-image-source: url(borda.png);
+            border-image-repeat: stretch;
+            border-image-slice: 34 fill;
+        }
+
+
+        .outset {
+            border: 21px solid;
+            border-image-source: url(borda.png);
+            border-image-repeat: stretch;
+            border-image-slice: 22;
+            border-image-outset: 18px;
+            margin: 10px;
+        }
+
+        .shorthand{
+            border-image: url("borda.png") 22 / 10px / 10px round;
+
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bordas</h1>
+    <p>border-width</p>
+    <p>border-style</p>
+    <p>border-color</p>
+
+    <p>Exemplo</p>
+    <div class="exe"></div>
+
+    <p>Exemplo 2</p>
+    <div class="exe2"></div>
+
+    <h2>Bordas com imagens/gradientes</h2>
+
+    <p>Borda com imagens</p>
+    <div class="img"></div>
+
+    <p>Borda com gradiente</p>
+    <div class="img2"></div>
+
+    <p>Borda com slice</p>
+    <div class="slice"></div>
+
+    <p>Borda com slice e gradiente</p>
+    <div class="slice-gradient"></div>
+
+    <p>Borda com repeat</p>
+    <div class="repeat"></div>
+
+    <p>Borda outset</p>
+    <div class="outset"></div>
+
+    <p>Borda Shorthand</p>
+    <div class="shorthand"></div>
+
+    <details>
+        <summary>Detalhes</summary>
+        <p>border-image: <br> 
+            /* source */ <br>
+            /* slice /size / outset */ <br>
+            /* repeat */ <br>
+        ;</p>
+    </details>
+
+    <h2></h2>
+</body>
+
+</html>
