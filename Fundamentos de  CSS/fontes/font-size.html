@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+        *{
+            font-family: "Raleway";
+        }
+        
+        code{
+            background-color: rgb(111, 192, 111);
+        }
+        .bold{
+            font-weight: bold;
+        }
+
+        .italic{
+            font-style: italic;
+        }
+
+        .oblique{
+            font-style: oblique;
+        }
+
+        .boldW{
+            font-weight: 900;
+        }
+
+        div > p{
+            font-weight: bolder;
+        }
+
+        .smallcats{
+            font-variant: small-caps;
+        }
+
+        .line-height{
+            /* Multiplica o valor da fonte (10px) pelo valor do atributo (2 nesse caso) */
+            font-size: 10px;
+            line-height: 2;
+        }
+
+        .shorthand{
+            font: italic small-caps bold 20px/2 "Raleway";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propriedades</h1>
+    <h2><code>font-size</code></h2>
+    <p class="bold">bold</p>
+
+    <hr>
+
+    <div>
+        Larger/Smaller
+        <p>Relativos as fontes pai</p>
+    </div>
+
+    <h2><code>font-style</code></h2>
+    <p class="italic">italic</p>
+    <p class="oblique">oblique</p>
+    <i>Tag italic</i>
+
+    <h2><code>font-weight</code></h2>
+    <p>Espessura da fonte</p>
+    <p class="boldW">boldW</p>
+
+    <hr> 
+
+    <div> elemento pai
+        <p>elemento filho</p>
+    </div>
+
+    <h2><code>font-variant</code></h2>
+    <p>Se deve ser exibido em formato versalete(small caps)</p>
+    <p class="smallcats">smallcats</p>
+
+    <h2><code>font-stretch</code></h2>
+    <p>Texto mais estreito (condensado) ou mais largo (expandido)</p>
+    <p>Não é muito usado pela indisponibilidades das fontes</p>
+
+    <p style="font-stretch: extra-condensed;">Meu texto</p>
+    <p style="font-stretch: condensed;">Meu texto</p>
+    <p style="font-stretch: expanded;">Meu texto</p>
+    <p style="font-stretch: extra-expanded;">Meu texto</p>
+
+    <h2><code>line-height</code></h2>
+    <p>Especificar o espaçamento em cima e abaixo de cada linha do texto</p>
+
+    <p class="line-height">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto hic consectetur saepe doloremque provident asperiores, reiciendis aliquam soluta, commodi, sint dolore fugit repudiandae natus dolorum magnam maiores inventore repellendus ad?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, vel! Quod, ipsum aliquam nemo quis totam autem atque ratione fugit quaerat id unde modi similique, explicabo vitae nostrum praesentium aperiam!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel repudiandae, incidunt nisi nihil, molestias, perspiciatis sed reprehenderit exercitationem quos unde totam! Sapiente ipsum non placeat minima vero eum nobis voluptatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium perspiciatis obcaecati ex maxime ad est sequi? Inventore odio modi vitae quas! Facere, neque nemo similique illo cum eligendi culpa. Laboriosam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad corrupti laudantium deserunt recusandae ducimus unde? Earum magni quidem dignissimos eum, iure debitis! Aliquam exercitationem distinctio doloremque asperiores incidunt hic numquam.
+    </p>
+
+    <h2><code>Shorthand</code></h2>
+    <p class="shorthand">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cumque reiciendis ratione, nam pariatur ut nisi a aspernatur voluptatibus dolorum facilis animi autem aperiam officia eveniet sint suscipit. Ad, vitae.
+    </p>
+
+    <details>
+        <summary>detaisl</summary>
+        font: style variant weigh size/height family
+    </details>
+
+</body>
+
+</html>
