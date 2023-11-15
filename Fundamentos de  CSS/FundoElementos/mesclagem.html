@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-blend-mode</title>
+
+    <style>
+        body {
+            width: 200vw;
+        }
+
+        div {
+            border: 10px dashed rgb(255, 0, 43);
+            height: 300px;
+            width: 300px;
+            padding: 30px;
+
+            background-color: aqua;
+
+            overflow: auto;
+
+            color: rgb(55, 255, 0);
+            font-size: 60px;
+            font-weight: 900;
+            text-align: center;
+
+            background:
+                linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+                linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+                linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+                linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+                linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+                linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+            background-color: #131313;
+            background-size: 20px 20px;
+            background-blend-mode: multiply;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>BlendMode</h1>
+    <p>Mesclagem do background com o conteudo</p>
+
+    <br>
+
+    <h2><code>background-blendmode:multiply;</code></h2>
+    <p>Vai ter o ponto de origen superior esquerdo, nao cobre a área, mas o padding</p>
+    <div id="padding-box">
+        <p>TRILHA DE CSS</p>
+    </div>
+
+</body>
+
+</html>

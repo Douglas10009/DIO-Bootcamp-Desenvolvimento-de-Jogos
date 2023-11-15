@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Position</title>
+
+    <style>
+        body {
+            width: 200vw;
+        }
+
+        div {
+            border: 10px dashed rgb(255, 0, 43);
+            height: 300px;
+            width: 300px;
+            padding: 30px;
+
+            background-color: aqua;
+
+            overflow: auto;
+
+            color: blue;
+            font-size: 60px;
+            font-weight: 900;
+            text-align: center;
+
+            background:
+                linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+                linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+                linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+                linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+                linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+                linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+            background-color: #131313;
+            background-size: 20px 20px;
+        }
+
+        #padding-box {
+            background-clip: padding-box;
+        }
+
+        #border-box {
+            background-clip: border-box;
+        }
+
+        #content-box {
+            background-clip: content-box;
+        }
+
+        #text {
+            /* Para o chrome entender */
+            -webkit-background-clip: text;
+            /* Para não sobrepor as cores */
+            color: transparent;
+
+            border: 5px solid black;
+            background-clip: text;
+
+            background-image: url("https://img.freepik.com/fotos-gratis/curvilineos-efeitos-ondulados-abstratos-criativos-curvas-de-cor-fluem-luxo-minimalista-elegante-na-moda-colorido-wav_1258-150985.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1697932800&semt=ais");
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Background clip</h1>
+    <p>Definir a origem do background</p>
+
+    <br>
+
+    <h2><code>background-clip:padding-box;</code></h2>
+    <p>Vai ter o ponto de origen superior esquerdo, nao cobre a área, mas o padding</p>
+    <div id="padding-box">
+        <p>TRILHA DE CSS</p>
+    </div>
+
+    <br>
+
+    <h2><code>background-clip:border-box;</code></h2>
+    <p>Começa da esquerda, cobre também a borda</p>
+    <div id="border-box">
+        <p>TRILHA DE CSS</p>
+    </div>
+
+    <br>
+
+    <h2><code>background-clip:content-box;</code></h2>
+    <p>Ele vai cobrir somente a área do conteúdo</p>
+    <div id="content-box">
+        <p>TRILHA DE CSS</p>
+    </div>
+
+    <br>
+
+    <h2><code>background-clip:text;</code></h2>
+    <p>Ele vai cobrir somente a área do conteúdo</p>
+    <div id="text">
+        <p>TRILHA DE CSS</p>
+    </div>
+</body>
+
+</html>

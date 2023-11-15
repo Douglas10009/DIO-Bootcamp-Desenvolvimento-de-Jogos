@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Position</title>
+
+    <style>
+
+        body{
+            width: 200vw;
+        }
+
+        div{
+            border: 5px rgb(255, 0, 43) solid;
+            height: 300px;
+            width: 300px;
+
+            background-image: url("https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/blogs/18725/images/DAau3fjETFmAjLVaNl3B_FallLandscape7-.jpg");
+            background-size: cover;
+            overflow: auto;
+
+            color: blue;
+        }
+
+        #fixed{
+            background-attachment: fixed;
+        }
+
+        #scroll{
+            background-attachment: scroll;
+        }
+
+        #local{
+            background-attachment: local;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>Background Attachment</h1>
+    <p>Definir como ele vai ficar em relação ao scrool, define o paralax e tals</p>
+
+    <br>
+
+    <h2><code>background-attachment:fixed;</code></h2>
+    <p>Ele vai ficar fixo em relação ao background</p>
+    <div id="fixed">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ut ipsum repellendus amet doloremque explicabo! Velit non consequuntur modi obcaecati, quo repellendus consequatur hic magni saepe! Odio laudantium assumenda iure.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ullam, pariatur quo nihil sunt natus est, qui culpa praesentium distinctio veritatis soluta. Doloremque, fuga sint sapiente quis incidunt a autem?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit temporibus amet nulla distinctio nihil illo labore dicta commodi quis! Dolorem necessitatibus fuga corporis reiciendis cupiditate recusandae veritatis aliquam odit laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis culpa a, impedit unde quidem, doloribus laudantium odio, veritatis quia ut repudiandae excepturi fugit porro amet optio praesentium officia recusandae ipsum.
+        </p>
+    </div>
+
+    <br>
+
+    <h2><code>background-attachment:scrool;</code></h2>
+    <p>Não se mexe por ocasião alguma</p>
+    <div id="scroll">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ut ipsum repellendus amet doloremque explicabo! Velit non consequuntur modi obcaecati, quo repellendus consequatur hic magni saepe! Odio laudantium assumenda iure.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ullam, pariatur quo nihil sunt natus est, qui culpa praesentium distinctio veritatis soluta. Doloremque, fuga sint sapiente quis incidunt a autem?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit temporibus amet nulla distinctio nihil illo labore dicta commodi quis! Dolorem necessitatibus fuga corporis reiciendis cupiditate recusandae veritatis aliquam odit laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis culpa a, impedit unde quidem, doloribus laudantium odio, veritatis quia ut repudiandae excepturi fugit porro amet optio praesentium officia recusandae ipsum.
+        </p>
+    </div>
+
+    <br>
+
+    <h2><code>background-attachment:local;</code></h2>
+    <p>Se move em relação ao scrool local</p>
+    <div id="local">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ut ipsum repellendus amet doloremque explicabo! Velit non consequuntur modi obcaecati, quo repellendus consequatur hic magni saepe! Odio laudantium assumenda iure.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ullam, pariatur quo nihil sunt natus est, qui culpa praesentium distinctio veritatis soluta. Doloremque, fuga sint sapiente quis incidunt a autem?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit temporibus amet nulla distinctio nihil illo labore dicta commodi quis! Dolorem necessitatibus fuga corporis reiciendis cupiditate recusandae veritatis aliquam odit laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis culpa a, impedit unde quidem, doloribus laudantium odio, veritatis quia ut repudiandae excepturi fugit porro amet optio praesentium officia recusandae ipsum.
+        </p>
+    </div>
+</body>
+
+</html>
