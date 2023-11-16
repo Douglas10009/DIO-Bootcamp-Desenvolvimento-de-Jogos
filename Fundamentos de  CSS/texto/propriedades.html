@@ -16,7 +16,34 @@
 
 
         a{
+            text-decoration: none;
+        }
+
+        .line-through{
             text-decoration: line-through;
+        }
+
+        .underline{
+            text-decoration-line: underline;
+        }
+
+        .mixed{
+            text-decoration-line: line-through;
+            text-decoration-style: wavy;
+            text-decoration-color: rgb(154, 15, 59);
+            text-decoration-thickness: 4px;
+        }
+
+        .indent{
+            text-indent: 20px;
+        }
+
+        .letter-spacing{
+            letter-spacing: 10px;
+        }
+
+        .word-spacing{
+            word-spacing: 10px;
         }
     </style>
 </head>
@@ -28,10 +55,33 @@
     <p><code>text-transform</code></p>
     <p class="transform">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quidem iste placeat quod quis sunt expedita. Neque unde corrupti, libero illo optio, blanditiis minus eum voluptatum, saepe vel temporibus ducimus!</p>
 
+    <hr>
+
     <p><code>text-align</code></p>
     <p class="align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, animi cumque eaque nisi eligendi ratione voluptates ab eveniet assumenda aut unde vitae numquam. Explicabo odio velit impedit est, veniam inventore.</p>
 
+    <hr>
+
     <p><code>text-decoration</code></p>
-    <p class="decoration"><a href="#">I DONT MEAN  TO BE COMPLEASIN</a></p>
+    <p class="line-through"><a href="#">Line through</a></p>
+    <p class="underline"><a href="#">underline</a></p>
+    <p class="mixed"><a href="#">mixed</a></p>
+
+    <hr>
+
+    <p><code>text-ident</code></p>
+    <p class="indent">
+        Define o recuo da primeira linha<br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam ea pariatur esse, dignissimos amet voluptatem architecto officiis consectetur sapiente, ducimus fugit sint explicabo! Magni maxime ratione nesciunt, non consequatur obcaecati.
+    </p>
+
+    <hr>
+
+    <p><code>letter-spacing</code> e <code>word-spacing</code></p>
+    <p><code>letter-spacing</code></p>
+    <p class="letter-spacing">Espaçamento entre cada CARACTERE do seu texto</p>
+
+    <p><code>word-spacing</code></p>
+    <p class="word-spacing">Espaçamento entre cada palavra</p>
 </body>
 </html>
