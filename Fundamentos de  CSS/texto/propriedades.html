@@ -1,64 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Propriedades</title>
 
     <style>
-        .transform{
+        .transform {
             text-transform: capitalize;
         }
 
-        .align{
+        .align {
             text-align: justify;
         }
 
 
-        a{
+        a {
             text-decoration: none;
         }
 
-        .line-through{
+        .line-through {
             text-decoration: line-through;
         }
 
-        .underline{
+        .underline {
             text-decoration-line: underline;
         }
 
-        .mixed{
+        .mixed {
             text-decoration-line: line-through;
             text-decoration-style: wavy;
             text-decoration-color: rgb(154, 15, 59);
             text-decoration-thickness: 4px;
         }
 
-        .indent{
+        .indent {
             text-indent: 20px;
         }
 
-        .letter-spacing{
+        .letter-spacing {
             letter-spacing: 10px;
         }
 
-        .word-spacing{
+        .word-spacing {
             word-spacing: 10px;
+        }
+
+        /* White space */
+        .conteiner {
+            width: 200px;
+            background-color: chartreuse;
+        }
+
+        .conteiner>span {
+            background-color: seagreen;
+            color: wheat;
+        }
+
+        #normal {
+            white-space: normal;
+        }
+
+        #no-wrap {
+            white-space: nowrap;
+        }
+
+        #pre {
+            white-space: pre;
+        }
+
+        #pre-line {
+            white-space: pre-line;
+        }
+
+        #pre-wrap {
+            white-space: pre-wrap;
+        }
+
+        #pre-wrap {
+            white-space: pre-wrap;
+        }
+
+        #break-spaces {
+            white-space: break-spaces;
+        }
+
+        /* Word-wrap */
+        .exemplo {
+            width: 100px;
+            color: black;
+            background-color: blueviolet;
+        }
+
+        #normal {
+            word-wrap: normal;
+        }
+
+        #break-word {
+            word-wrap: break-word;
+        }
+
+        /* Word-break */
+        #break-normal {
+            word-break: normal;
+        }
+
+        #break-all {
+            word-break: break-all;
+        }
+
+        #break-keep {
+            word-break: keep-all;
+        }
+
+        /* writing-mode */
+        #horizontal {
+            writing-mode: horizontal-tb;
+        }
+
+        #vertical-rl {
+            writing-mode: vertical-lr;
+        }
+
+        #vertical-lr {
+            writing-mode: vertical-rl;
+        }
+
+        /* text-overflow */
+        .exemplo2{
+            width: 200px;
+            height: 20px;
+            background-color: brown;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        #clip {
+            text-overflow: clip;
+        }
+
+        #ellipsis {
+            text-overflow: ellipsis;
+        }
+
+        /* Só funciona no firefox */
+        #string {
+            text-overflow: "Ver mais >";
         }
     </style>
 </head>
+
 <body>
     <h1>Propriedades</h1>
 
     <br>
 
     <p><code>text-transform</code></p>
-    <p class="transform">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quidem iste placeat quod quis sunt expedita. Neque unde corrupti, libero illo optio, blanditiis minus eum voluptatum, saepe vel temporibus ducimus!</p>
+    <p class="transform">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quidem iste placeat quod quis
+        sunt expedita. Neque unde corrupti, libero illo optio, blanditiis minus eum voluptatum, saepe vel temporibus
+        ducimus!</p>
 
     <hr>
 
     <p><code>text-align</code></p>
-    <p class="align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, animi cumque eaque nisi eligendi ratione voluptates ab eveniet assumenda aut unde vitae numquam. Explicabo odio velit impedit est, veniam inventore.</p>
+    <p class="align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, animi cumque eaque nisi
+        eligendi ratione voluptates ab eveniet assumenda aut unde vitae numquam. Explicabo odio velit impedit est,
+        veniam inventore.</p>
 
     <hr>
 
@@ -72,7 +179,9 @@
     <p><code>text-ident</code></p>
     <p class="indent">
         Define o recuo da primeira linha<br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam ea pariatur esse, dignissimos amet voluptatem architecto officiis consectetur sapiente, ducimus fugit sint explicabo! Magni maxime ratione nesciunt, non consequatur obcaecati.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam ea pariatur esse, dignissimos amet voluptatem
+        architecto officiis consectetur sapiente, ducimus fugit sint explicabo! Magni maxime ratione nesciunt, non
+        consequatur obcaecati.
     </p>
 
     <hr>
@@ -83,5 +192,140 @@
 
     <p><code>word-spacing</code></p>
     <p class="word-spacing">Espaçamento entre cada palavra</p>
+
+    <hr>
+
+    <p><code>White-space</code></p>
+    <p>Define como espaços em branco do texto deve ser tratado</p>
+
+    <p>Exemplos</p>
+
+    <P>NORMAL</P>
+    <p class="conteiner" id="normal">
+        <span>
+            Lorem ipsum dolor
+            sit amet consectetur adipisicing elit.
+            Ullam provident inventore facere qui s mollitia
+            tempore laudantium cupiditate, adipisci cumque ut necessitatibus
+            neque maxime, asperiores sed corporis placeat quidem iure vero?
+        </span>
+    </p>
+    <p>NO-WRAP</p>
+    <p class="conteiner" id="no-wrap">
+        <span>
+            Lorem ipsum dolor sit amet
+            consectetur adip isic ing elit. Ullam provident
+            inventore facere quis mollitia tempore laudantium cupiditate,
+            adipisci cumque ut necessitatibus neque maxime, asperiores
+            sed corporis placeat quidem iure vero?
+        </span>
+    </p>
+    <p>PRE</p>
+    <p class="conteiner" id="pre">
+        <span>
+
+            Lorem ipsum dol
+            or sit amet consectetur adipisicing e
+            lit. Ullam provident inventore
+            facere quis mollitia tempore laudantium cupiditate, adipisci
+            cumque ut necessitatibus neque maxime, asperiores sed
+            corporis placeat quidem iure vero?
+        </span>
+    </p>
+    <p>PRE-LINE</p>
+    <p class="conteiner" id="pre-line">
+        <span>
+
+            Lorem ipsum dol
+            or sit amet consectetur adipisicing e
+            lit. Ullam provident inventore
+            facere quis mollitia tempore laudantium cupiditate, adipisci
+            cumque ut necessitatibus neque maxime, asperiores sed
+            corporis placeat quidem iure vero?
+        </span>
+    </p>
+    <p>PRE-WRAP</p>
+    <p class="conteiner" id="pre-wrap">
+        <span>
+
+            Lorem ipsum dol
+            or sit amet consectetur adipisicing e
+            lit. Ullam provident inventore
+            facere quis mollitia tempore laudantium cupiditate, adipisci
+            cumque ut necessitatibus neque maxime, asperiores sed
+            corporis placeat quidem iure vero?
+        </span>
+    </p>
+    <p>BREAK-SPACES</p>
+    <p class="conteiner" id="break-spaces">
+        <span>
+
+            Lorem ipsum dol
+            or sit amet consectetur adipisicing e
+            lit. Ullam provident inventore
+            facere quis mollitia tempore laudantium cupiditate, adipisci
+            cumque ut necessitatibus neque maxime, asperiores sed
+            corporis placeat quidem iure vero?
+        </span>
+    </p>
+
+    <hr>
+
+    <p><code>word-wrap</code></p>
+    <p>Define a quebra de palavras, reconhece se a palavra daria ou não no conteiner</p>
+
+    <p>word-wrap:normal</p>
+    <p id="normal" class="exemplo">
+        TRILHA de CSSTRILHA de CSSTRILHA de CSS
+    </p>
+    <p>word-wrap:break-word</p>
+    <p id="break-word" class="exemplo">
+        TRILHA de CSSTRILHA de CSSTRILHA de CSSTRILHA de CSS
+    </p>
+
+    <hr>
+
+    <p><code>word-break</code></p>
+    <p>Define a quebra de linha, não reconhece a palavra que ultraprassaria</p>
+
+    <p>word-break:normal</p>
+    <p id="break-normal" class="exemplo">
+        TRILHA de CSSTRILHA de CSSTRILHA de CSS
+    </p>
+    <p>word-break:break-all</p>
+    <p id="break-all" class="exemplo">
+        TRILHA de CSSTRILHA de CSSTRILHA de CSS
+    </p>
+    <p>word-break:keep-all</p>
+    <p id="break-keep" class="exemplo">
+        TRILHA de CSSTRILHA de CSSTRILHA de CSS
+    </p>
+
+
+    <hr>
+
+    <p><code>writing-mode</code></p>
+    <p>Define a orientação do texto (vertical/horizontal)</p>
+
+    <p>writing-mode:horizontal-tb</p>
+    <p class="exemplo" id="horizontal">Quando a saudade apertar...</p>
+    <p>writing-mode:vertical-lr</p>
+    <p class="exemplo" id="vertical-lr">Quando a saudade apertar...</p>
+    <p>writing-mode:vertical-rl</p>
+    <p class="exemplo" id="vertical-rl">Quando a saudade apertar...</p>
+
+    <hr>
+
+    <p><code>text-overflow</code></p>
+    <p>Orientação do texto (vertical/horizontal)</p>
+
+    <p><code>text-overflow:clip</code></p>
+    <p class="exemplo2" id="clip">IN THE BACK OF MY MIND, YOU DIED</p>
+    <p><code>text-overflow:ellipsis</code></p>
+    <p class="exemplo2" id="ellipsis">IN THE BACK OF MY MIND, YOU DIED</p>
+    <p><code>text-overflow:string</code></p>
+    <p class="exemplo2" id="string">IN THE BACK OF MY MIND, YOU DIED</p>
+    <p>esse último somente no firefox</p>
 </body>
+
 </html>
