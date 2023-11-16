@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            width: 300px;
+            height: 200px;
+            background-color: chocolate;
+            border: 10px solid gray;
+        }
+
+        .visible{
+            overflow: visible;
+        }
+        .hidden{
+            overflow: hidden;
+        }
+        .scroll{
+            overflow: scroll;
+        }
+        .auto{
+            overflow: auto;
+        }
+        .x-y{
+            overflow-y: hidden;
+            overflow-x: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propriedade <code>overflow</code></h1>
+    <p>Define como o conteudo será exibido caso ultrapasse dos limites do conteiner</p>
+
+    <code>overflow:visible</code>
+    <div class="visible">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur nobis expedita eaque minus atque provident eveniet voluptatibus, saepe assumenda earum? Illo, sequi in. Ducimus dolorem ex natus quidem ab quibusdam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ad, suscipit error non aut illo quae autem similique assumenda dolorem maiores laborum sequi eveniet quam qui ratione nihil blanditiis dolor.
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi distinctio hic, blanditiis repudiandae excepturi explicabo porro eaque ex, error mollitia sequi asperiores rem animi necessitatibus odit corrupti consequatur veniam itaque!
+    </div>
+     
+    <br><br><br><br><br><br><br>
+
+    <code>overflow:hidden</code>
+    <div class="hidden">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur nobis expedita eaque minus atque provident eveniet voluptatibus, saepe assumenda earum? Illo, sequi in. Ducimus dolorem ex natus quidem ab quibusdam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ad, suscipit error non aut illo quae autem similique assumenda dolorem maiores laborum sequi eveniet quam qui ratione nihil blanditiis dolor.
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi distinctio hic, blanditiis repudiandae excepturi explicabo porro eaque ex, error mollitia sequi asperiores rem animi necessitatibus odit corrupti consequatur veniam itaque!
+    </div>
+
+    <br><br><br><br><br><br><br>
+
+    <code>overflow:scroll</code>
+    <div class="scroll">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur nobis expedita eaque minus atque provident eveniet voluptatibus, saepe assumenda earum? Illo, sequi in. Ducimus dolorem ex natus quidem ab quibusdam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ad, suscipit error non aut illo quae autem similique assumenda dolorem maiores laborum sequi eveniet quam qui ratione nihil blanditiis dolor.
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi distinctio hic, blanditiis repudiandae excepturi explicabo porro eaque ex, error mollitia sequi asperiores rem animi necessitatibus odit corrupti consequatur veniam itaque!
+    </div>
+
+    <br><br><br><br><br><br><br>
+
+    <code>overflow:auto</code>
+    <p>mostra somente os scrolls nescessários</p>
+    <div class="auto">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur nobis expedita eaque minus atque provident eveniet voluptatibus, saepe assumenda earum? Illo, sequi in. Ducimus dolorem ex natus quidem ab quibusdam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ad, suscipit error non aut illo quae autem similique assumenda dolorem maiores laborum sequi eveniet quam qui ratione nihil blanditiis dolor.
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi distinctio hic, blanditiis repudiandae excepturi explicabo porro eaque ex, error mollitia sequi asperiores rem animi necessitatibus odit corrupti consequatur veniam itaque!
+    </div>
+
+    <br><br><br><br><br><br><br>
+
+    <code>overflow-x:auto</code>
+    <p>mostra somente os scrolls nescessários</p>
+    <div class="x-y">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur nobis expedita eaque minus atque provident eveniet voluptatibus, saepe assumenda earum? Illo, sequi in. Ducimus dolorem ex natus quidem ab quibusdam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ad, suscipit error non aut illo quae autem similique assumenda dolorem maiores laborum sequi eveniet quam qui ratione nihil blanditiis dolor.
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi distinctio hic, blanditiis repudiandae excepturi explicabo porro eaque ex, error mollitia sequi asperiores rem animi necessitatibus odit corrupti consequatur veniam itaque!
+    </div>
+</body>
+
+</html>
