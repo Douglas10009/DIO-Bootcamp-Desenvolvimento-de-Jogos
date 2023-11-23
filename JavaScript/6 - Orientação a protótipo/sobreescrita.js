@@ -22,3 +22,6 @@ console.log(doug.nome);
 // Para funções construtoras, utilizar pessoa.prototype
 // Para objetos instanciados utilizar pessoa.__proto__
 // Strings também tem prototípos
+
+// Sobrescrita - Sobrescreve métodos
+// Shadowing - Sobreescreve variaveis
