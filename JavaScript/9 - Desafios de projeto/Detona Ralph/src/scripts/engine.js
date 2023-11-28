@@ -40,19 +40,22 @@ function moveEnemy() {
 function addListenerHitBox() {
     state.view.squares.forEach((square) => {
 
-        square.addEventListener('click', () => { 
+        // Por que usar o mouse down ao invés do clique?
+        square.addEventListener('mousedown', () => { 
             if (square.classList.contains('enemy')) {
                 state.view.score.innerText ++;
+                state.values.result = state.values.innerText;
+                square.classList.remove('enemy')
 
                 // TODO - Aumentar o nível de dificuldade do jogo, diminuindo o tempo em que ele vai ficar parado, mas n funciona
-                if (state.view.score.innerText >= state.values.dificultLevel) {
-                    state.values.gameVelocity -= 50;
-                    state.values.dificultLevel += 10;
+                // if (state.view.score.innerText >= state.values.dificultLevel) {
+                //     state.values.gameVelocity -= 50;
+                //     state.values.dificultLevel += 10;
 
-                    // A cada 10 pontos feitos, ele reduz o tempo do ralph ficar parado em 50ms
-                    console.log(state.values.gameVelocity);
-                    console.log(state.values.dificultLevel);
-                }
+                //     // A cada 10 pontos feitos, ele reduz o tempo do ralph ficar parado em 50ms
+                //     console.log(state.values.gameVelocity);
+                //     console.log(state.values.dificultLevel);
+                // }
             }
         });
 
