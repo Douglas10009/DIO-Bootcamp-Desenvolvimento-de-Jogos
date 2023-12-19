@@ -58,7 +58,6 @@ function checkMatch() {
     }
     openCards = [];
 
-    setInterval(countDown, 1000);
 
     // Mostra mensagem de vitória
     if (document.querySelectorAll('.boxMatch').length === emojis.length) {
@@ -67,25 +66,7 @@ function checkMatch() {
 }
 
 
-const state = {
-    var: {
-        time: document.getElementById('timer'),
-        currentTime: 40,
-    },
-    countDownId: setInterval(countDown(), 1000),
-}
 
-function Timer() {
-    state.var.currentTime --;
-
-    state.var.time.textContent = state.var.currentTime;
-}
-
-
-function main() {
-    Timer();
-}
-main();
 
 // TODO - 
 // Timer
