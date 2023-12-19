@@ -23,6 +23,7 @@ let openCards = [];
 // Permite sortear baseado em uma função (Melhor forma de aleatorizar, 2 elemeentos com o mesmo valor e o pc que decide como vai organizar)
 let shuffleEmojis = emojis.sort(()=> (Math.random() > 0.5 ? 2 : -1));
 
+
 for (let i = 0; i < emojis.length; i++) {
     let box = document.createElement('div');
     box.className = 'item';
@@ -57,12 +58,34 @@ function checkMatch() {
     }
     openCards = [];
 
+    setInterval(countDown, 1000);
+
     // Mostra mensagem de vitória
     if (document.querySelectorAll('.boxMatch').length === emojis.length) {
         alert('U win!')
     }
 }
 
+
+const state = {
+    var: {
+        time: document.getElementById('timer'),
+        currentTime: 40,
+    },
+    countDownId: setInterval(countDown(), 1000),
+}
+
+function Timer() {
+    state.var.currentTime --;
+
+    state.var.time.textContent = state.var.currentTime;
+}
+
+
+function main() {
+    Timer();
+}
+main();
 
 // TODO - 
 // Timer
