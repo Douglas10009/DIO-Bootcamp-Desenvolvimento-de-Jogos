@@ -44,7 +44,7 @@ h2{
 }
 
 .game {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 430px;
     height: 430px;
     display: flex;
@@ -81,7 +81,7 @@ h2{
     /* Oculta a outra face */
     backface-visibility: hidden;
 
-    opacity: 0.87;
+    /* opacity: 0.87; */
 }
 
 .item.boxOpen{

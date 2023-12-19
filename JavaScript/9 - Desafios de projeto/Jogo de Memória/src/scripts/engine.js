@@ -42,6 +42,7 @@ function handleClick() {
 
         if (openCards.length == 2) {
             setTimeout(checkMatch, 500);
+            // checkMatch();
         }
     }
 }
@@ -55,4 +56,15 @@ function checkMatch() {
         openCards[1].classList.remove('boxOpen');
     }
     openCards = [];
+
+    // Mostra mensagem de vitória
+    if (document.querySelectorAll('.boxMatch').length === emojis.length) {
+        alert('U win!')
+    }
 }
+
+
+// TODO - 
+// Timer
+// Mudar o background
+// Colocar icones personalizados
