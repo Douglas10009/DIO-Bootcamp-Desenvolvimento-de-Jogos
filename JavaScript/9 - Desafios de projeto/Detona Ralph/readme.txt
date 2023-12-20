@@ -1,1 +1,0 @@
-Para criar uma ideia de como desenvolver um jogo
